@@ -37,6 +37,7 @@ const hellix = localFont({
 export const metadata: Metadata = {
   title: "Cevver",
   description: "Cevver",
+  icons: { icon: "/logo.svg" },
 };
 
 export default function RootLayout({
