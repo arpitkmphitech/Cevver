@@ -1,16 +1,12 @@
 "use client";
 
 import Script from "next/script";
-import React, { useEffect, useMemo, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import SectionHeading from "@/components/common/SectionHeading";
 
 const VendorForm: React.FC = () => {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const [iframeKey, setIframeKey] = useState(0);
-
-  const search = useMemo(() => searchParams?.toString() ?? "", [searchParams]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -23,27 +19,7 @@ const VendorForm: React.FC = () => {
     loadEmbeds();
     const t = window.setTimeout(loadEmbeds, 300);
     return () => window.clearTimeout(t);
-  }, [pathname, search, iframeKey]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const bump = () => setIframeKey((k) => k + 1);
-
-    // `usePathname()` doesn't change for hash-only navigation.
-    const onHashChange = () => bump();
-    const onVisible = () => {
-      if (document.visibilityState === "visible") bump();
-    };
-
-    window.addEventListener("hashchange", onHashChange);
-    document.addEventListener("visibilitychange", onVisible);
-
-    return () => {
-      window.removeEventListener("hashchange", onHashChange);
-      document.removeEventListener("visibilitychange", onVisible);
-    };
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="2xl:pt-[100px] 2xl:pb-[100px] xl:pt-[80px] xl:pb-[80px] sm:pt-[64px] sm:pb-[64px] pt-[52px] pb-[52px] md:px-12 lg:px-[100px] px-[20px]">
@@ -61,7 +37,7 @@ const VendorForm: React.FC = () => {
           strategy="afterInteractive"
         />
         <iframe
-          key={`${pathname}?${search}::${iframeKey}`}
+          key={pathname}
           loading="lazy"
           className="w-full"
           title="Join Vendor Waitlist"
