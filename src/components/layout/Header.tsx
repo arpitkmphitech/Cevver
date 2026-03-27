@@ -239,7 +239,7 @@ const Header = () => {
                   href={item.href}
                   className={cn(
                     "text-[#929292] text-base font-medium",
-                    isActive(item.href) ? "title-gradient" : ""
+                    isActive(item.href) ? "text-[#7556EF]" : ""
                   )}
                   onClick={(e) => {
                     onNavClick(e, item.href);
