@@ -5,7 +5,7 @@ import { LOGO_MAIN } from "@/lib/images";
 import ImageCustom from "../common/ImageCustom";
 import { cn } from "@/lib/utils";
 import Button from "../common/Button";
-import { X, Menu } from "lucide-react";
+import { X, EllipsisVertical } from "lucide-react";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "../ui/drawer";
 import { usePathname, useRouter } from "next/navigation";
 import { earlyAccessData, vendorsData } from "@/lib/constants";
@@ -185,7 +185,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <Button
               variant="secondary"
               className="min-w-0 2xl:h-[78px] xl:h-[64px] sm:h-[56px] shrink-0 rounded-[140px] 2xl:text-[20px] xl:text-[18px] md:text-base font-semibold"
@@ -196,13 +196,7 @@ const Header = () => {
             >
               {ctaLabel}
             </Button>
-            <button
-              className="md:hidden p-2 -mr-2 text-[#374151]"
-              onClick={() => setOpen(true)}
-              aria-label="Open menu"
-            >
-              <Menu size={24} />
-            </button>
+            <EllipsisVertical size={24} onClick={() => setOpen(true)} />
           </div>
         </div>
       </div>
