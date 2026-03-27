@@ -21,11 +21,11 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
   className,
 }) => {
   return (
-    <div className={cn("mx-auto", subtitle && "mb-0")}>
+    <div className={cn("mx-auto max-w-[660px]", subtitle && "mb-0")}>
       <Tag
         id={id}
         className={cn(
-          "text-[#111827] text-center font-normal 2xl:text-[50px] 2xl:leading-[1.2] xl:text-[36px] xl:leading-tight sm:text-[28px] sm:leading-[1.3] text-[28px] leading-[1.35]",
+          "text-[#111827] text-center font-medium 2xl:text-[50px] 2xl:leading-[1.2] xl:text-[36px] xl:leading-tight sm:text-[28px] sm:leading-[1.3] text-[28px] leading-[1.35]",
           subtitle
             ? "mb-3 sm:mb-4"
             : "mb-[30px] sm:mb-[35px] xl:mb-[40px] 2xl:mb-[50px]",

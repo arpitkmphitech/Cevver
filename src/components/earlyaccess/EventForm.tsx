@@ -41,7 +41,7 @@ const EventForm: React.FC = () => {
           loading="lazy"
           className="w-full"
           title="Join Early Access"
-          data-tally-src="https://tally.so/embed/9qlp8K?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          data-tally-src="https://tally.so/embed/ODLVV8?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         />
       </div>
     </div>

@@ -41,7 +41,7 @@ const VendorForm: React.FC = () => {
           loading="lazy"
           className="w-full"
           title="Join Vendor Waitlist"
-          data-tally-src="https://tally.so/embed/dWPKON?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          data-tally-src="https://tally.so/embed/9qOrxG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         />
       </div>
     </div>

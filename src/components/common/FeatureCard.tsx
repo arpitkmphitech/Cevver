@@ -37,7 +37,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 
       <p
         className={cn(
-          "text-[#111827] leading-snug text-base sm:text-base xl:text-lg 2xl:text-[20px]",
+          "text-[#111827] leading-snug text-base sm:text-base xl:text-lg 2xl:text-[20px] max-w-[200px]",
           subtitle ? "font-semibold" : "font-medium"
         )}
       >

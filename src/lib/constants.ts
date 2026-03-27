@@ -41,9 +41,21 @@ export const earlyAccessData = {
   },
   heroSection: {
     tagline: "Early Access - $100 per event",
-    headlineBefore: "Find event",
-    headlineAfter: "vendors ",
-    headlineHighlight: "fast.",
+    headlineBefore: [
+      "Plan your event",
+      "Plan your weddings",
+      "Plan your birthday",
+      "Find vendors fast",
+      "Plan your bridal",
+    ],
+    headlineAfter: ["stress", "without", "parties", "and 100%", "shower with"],
+    headlineHighlight: [
+      "free.",
+      "headaches.",
+      "stress-free.",
+      "reliable",
+      "ease.",
+    ],
     subtitle:
       "Skip the stress of searching instagram and get matched with vetted vendors for your event in minutes.",
     ctaLabel: "Join Early Access",
@@ -101,8 +113,8 @@ export const earlyAccessData = {
     ],
   },
   whatYouGetSection: {
-    titleBefore: "What you get for ",
-    titleHighlight: "$100",
+    titleBefore: "Flexible payment tiers starting from as low as ",
+    titleHighlight: "$49",
     cards: [
       {
         description: "Vendor matching",
@@ -151,9 +163,13 @@ export const vendorsData = {
   },
   heroSection: {
     tagline: "Early Access is free",
-    headlineBefore: "Get more event clients",
-    headlineAfter: "without ",
-    headlineHighlight: "running ads.",
+    headlineBefore: [
+      "Get more event clients",
+      "Expand your market reach with",
+      "Give your services",
+    ],
+    headlineAfter: ["without ", "100% ready to pay ", "the visibility it "],
+    headlineHighlight: ["running ads.", "clients.", "deserves."],
     subtitle:
       "Join Cevver's early vendor community and get matched with people who are actively planning events.",
     ctaLabel: "Join Vendor List",
@@ -205,7 +221,9 @@ export const vendorsData = {
     titleBefore: "Vendor early access is ",
     titleHighlight: "free.",
     subtitle:
-      "After launch, plans will start at $50/month. Lock in early access now.",
+      "After launch, plans will Starting from $25. Early Access FREE Lock in early access now.",
+    starting: "Starting from $25.",
+    free: "Early Access FREE",
     price: "$50",
     priceUnit: "/month",
     features: [

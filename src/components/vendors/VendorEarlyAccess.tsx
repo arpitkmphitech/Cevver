@@ -12,8 +12,10 @@ const VendorEarlyAccess = () => {
     titleBefore,
     titleHighlight,
     subtitle,
-    price,
-    priceUnit,
+    starting,
+    free,
+    // price,
+    // priceUnit,
     features,
   } = vendorEarlyAccessSection;
 
@@ -32,14 +34,20 @@ const VendorEarlyAccess = () => {
         />
       </div>
 
-      <div className="mx-auto max-w-[300px] bg-white rounded-[20px] px-6 py-8 sm:px-8 sm:py-10 xl:px-10 xl:py-12 2xl:px-[40px] 2xl:py-[40px]">
+      <div className="mx-auto max-w-[350px] bg-white rounded-[20px] px-6 py-8 sm:px-8 sm:py-10 xl:px-10 xl:py-12 2xl:px-[40px] 2xl:py-[40px]">
         <div className="flex flex-col items-center text-center">
-          <div className="flex items-baseline justify-center mb-6 sm:mb-8 xl:mb-[20px]">
-            <span className="text-black font-bold text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[38px]">
+          <div className="flex flex-col justify-center mb-6 sm:mb-8 xl:mb-[20px]">
+            {/* <span className="text-black font-bold text-[28px] sm:text-[32px] xl:text-[36px] 2xl:text-[38px]">
               {price}
             </span>
             <span className="text-[#8C8D91] font-normal align-top text-base sm:text-lg xl:text-[20px]">
               {priceUnit}
+            </span> */}
+            <span className="text-black font-semibold text-[28px] sm:text-[30px]">
+              {starting}
+            </span>
+            <span className="text-[#785AEF] font-semibold text-[28px] sm:text-[30px]">
+              {free}
             </span>
           </div>
           <div className="flex justify-center w-full">
