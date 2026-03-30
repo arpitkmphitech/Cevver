@@ -196,7 +196,7 @@ const Header = () => {
             >
               {ctaLabel}
             </Button>
-            <EllipsisVertical size={24} onClick={() => setOpen(true)} />
+            <EllipsisVertical size={24} className="md:hidden" onClick={() => setOpen(true)} />
           </div>
         </div>
       </div>
