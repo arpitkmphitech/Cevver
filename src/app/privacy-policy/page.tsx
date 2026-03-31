@@ -57,7 +57,7 @@ const PrivacyPolicyPage = () => {
     <>
       <section
         aria-labelledby="privacy-policy-heading"
-        className="relative min-h-screen pt-8 pb-16 sm:pt-10 md:pt-12 md:pb-24"
+        className="relative min-h-screen py-8 sm:py-10 md:py-12"
       >
         <div
           className="absolute inset-x-0 top-0 -z-10 h-[min(420px,50vh)] bg-linear-to-b from-[#EDE9FD] via-[#F5F3FF] to-transparent pointer-events-none"
