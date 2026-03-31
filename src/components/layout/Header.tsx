@@ -135,6 +135,10 @@ const Header = () => {
     [pathname, pendingHashKey, router, scrollToHash]
   );
 
+  if (pathname === "/privacy-policy") {
+    return null;
+  }
+
   return (
     <header
       className={cn(
@@ -196,7 +200,12 @@ const Header = () => {
             >
               {ctaLabel}
             </Button>
-            <EllipsisVertical size={24} className="md:hidden" onClick={() => setOpen(true)} />
+            <EllipsisVertical
+              size={24}
+              className="md:hidden"
+              aria-label="Open menu"
+              onClick={() => setOpen(true)}
+            />
           </div>
         </div>
       </div>
